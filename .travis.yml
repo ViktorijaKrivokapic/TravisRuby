@@ -1,0 +1,14 @@
+os: linux
+language: ruby
+dist: bionic
+
+install: skip
+
+jobs:
+  include:
+  - rvm: 2.5
+    gemfile: gemfiles/Gemfile.rails-3.2.x
+    env: ISOLATED=false
+  - rvm: 2.2
+    gemfile: gemfiles/Gemfile.rails-3.0.x
+    env: ISOLATED=true
