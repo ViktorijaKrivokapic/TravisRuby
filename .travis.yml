@@ -10,10 +10,10 @@ rvm:
 - 3.2
 cache:
 
-bundler
+ bundler
 script:
 
-bundle exec rspec
+ bundle exec rspec
 jobs:
   include:
     - &job
@@ -44,5 +44,3 @@ jobs:
     - <<: *job
       language: python
       python: 3.6
-
-
