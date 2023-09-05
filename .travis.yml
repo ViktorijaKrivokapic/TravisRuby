@@ -12,6 +12,10 @@ rvm:
 - 3.2
 cache:
  bundler
+
+ before_install:
+    - gem install bundler
+    
 script:
   - ruby -v
   - bundle install
