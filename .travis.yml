@@ -2,10 +2,6 @@ language: ruby
   gem "rails", git: "git@github.com:rails/rails.git"
 
 dist: xenial
-env:
-  - DB=postgres
-  - SH=bash
-  - PACKAGE_VERSION="1.0.*"
 
 rvm:
 
@@ -15,9 +11,10 @@ rvm:
 - 3.1
 - 3.2
 cache:
-
  bundler
 script:
+  - ruby -v
+  - require 'bundler/setup'
 
  bundle exec rspec
 jobs:
