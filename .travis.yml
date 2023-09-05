@@ -1,4 +1,6 @@
 language: ruby
+  gem "rails", git: "git@github.com:rails/rails.git"
+
 dist: xenial
 env:
   - DB=postgres
