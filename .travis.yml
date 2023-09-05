@@ -14,9 +14,8 @@ cache:
  bundler
 script:
   - ruby -v
-  - require 'bundler/setup'
+  - bundle install
 
- bundle exec rspec
 jobs:
   include:
     - &job
